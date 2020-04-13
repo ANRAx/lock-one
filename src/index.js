@@ -5,7 +5,7 @@ import Header from './Header'
 import Card from './Card';
 import Footer from './Footer';
 import Stopwatch from './Stopwatch';
-import Dashboard from './Dashboard'
+// import Dashboard from './Dashboard';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 
