@@ -28,7 +28,6 @@ class Stopwatch extends React.Component {
         this.setState({
             timerOn: false
         });
-        alert("Time's up!")
         clearInterval(this.timer);
     }
 
@@ -37,7 +36,6 @@ class Stopwatch extends React.Component {
         setTimeout(() => this.stopTimer(), 30000);
     }
     
-
     render() {
         console.log(this.state.timerTime);
         
@@ -56,7 +54,7 @@ class Stopwatch extends React.Component {
                     {hours} : {minutes} : {seconds} : {centiseconds}
                 </div>
 
-                {this.state.timerTime === 10000 && (
+                {this.state.timerOn === false && (
                     <span>Time is up!</span>
                 )}
             </div>
